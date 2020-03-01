@@ -11,7 +11,7 @@ public class Pit
         this.tossedGold = false;
         this.highestTier = 0;
         this.totalGold = 0.0;
-        //this.pitState = default(UnityEngine.Random.State);
+        this.pitState = default(UnityEngine.Random.State);
         this.pitTime = new PlayerTime();
         this.tossCount = 0;
     }
@@ -26,7 +26,7 @@ public class Pit
     public bool tossedGold;
 
     // Token: 0x0400040D RID: 1037
-    //public UnityEngine.Random.State pitState;
+    public UnityEngine.Random.State pitState;
 
     // Token: 0x0400040E RID: 1038
     public PlayerTime pitTime;

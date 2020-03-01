@@ -1,0 +1,16 @@
+﻿@page "/pit"
+@inherits PitBase
+
+    <div class="pit container">
+        @if (playerdata == null)
+        {
+            <h1>Oops...</h1>
+            <p>You haven't loaded a save file yet, redirecting you now.</p>
+        }
+        else
+        {
+            <h1 class="display-4">Money Pit</h1>
+            <h2>Total gold: @totalGold</h2>
+            <h2>Num: @num</h2>
+        }
+    </div>
